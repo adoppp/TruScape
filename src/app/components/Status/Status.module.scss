@@ -1,0 +1,53 @@
+@use '@/app/styles/variables' as *;
+@use '@/app/styles/colors' as *;
+
+.container {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 4px 14px;
+    border-radius: $status-border;
+
+    & span {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+    }
+
+    &.active {
+        background-color: $green-light;
+        color: $green-default;
+
+        & span {
+            background-color: $green-default;
+        }
+    }
+
+    &.notActive {
+        background-color: $red-light;
+        color: $red-default;
+
+        & span {
+            background-color: $red-default;
+        }
+    }
+
+    &.pending {
+        background-color: $yellow-light;
+        color: $yellow-default;
+
+        & span {
+            background-color: $yellow-default;
+        }
+    }
+
+    &.suspended {
+        background-color: $blue-light;
+        color: $blue-default;
+
+        & span {
+            background-color: $blue-default;
+        }
+    }
+}
