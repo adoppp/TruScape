@@ -1,0 +1,33 @@
+@use '@/app/styles/variables' as *;
+@use '@/app/styles/colors' as *;
+
+.input {
+    width: 100%;
+
+    &__label {
+        font-size: 16px;
+        font-weight: 400;
+
+        margin-bottom: 8px;
+    }
+
+    & label {
+        display: block;
+        width: 100%;
+    }
+
+    &__element {
+        width: inherit;
+        outline: none;
+
+        padding: 12px;
+        border: 1px $grey-default solid;
+        border-radius: $btn-border;
+
+        &::placeholder {
+            color: $grey-default;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}

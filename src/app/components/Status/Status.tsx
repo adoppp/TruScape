@@ -9,7 +9,7 @@ interface StatusProps {
 
 const cn = classNames.bind(styles);
 
-const Status: FC<StatusProps> = ({ statusType }): ReactElement => {
+export const Status: FC<StatusProps> = ({ statusType }): ReactElement => {
 
     return (
         <div className={cn(
@@ -24,5 +24,3 @@ const Status: FC<StatusProps> = ({ statusType }): ReactElement => {
         </div>
     );
 };
-
-export default Status;
