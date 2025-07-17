@@ -21,11 +21,11 @@
         outline: none;
 
         padding: 12px;
-        border: 1px $grey-default solid;
-        border-radius: $btn-border;
+        border: 1px red solid;
+        border-radius: $border-2;
 
         &::placeholder {
-            color: $grey-default;
+            color: blue;
             font-size: 14px;
             font-weight: 400;
         }

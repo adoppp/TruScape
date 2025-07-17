@@ -1,0 +1,15 @@
+@use '@/app/styles/variables' as *;
+@use '@/app/styles/colors' as *;
+@use '@/app/styles/typography' as *;
+
+.header {
+    background-color: $green-default;
+    padding: 8px 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom-left-radius: $border-1;
+    border-bottom-right-radius: $border-1;
+}

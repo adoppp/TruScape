@@ -1,28 +1,30 @@
 @use '@/app/styles/variables' as *;
 @use '@/app/styles/colors' as *;
+@use '@/app/styles/typography' as *;
 
 .button {
-    background-color: $dark-default;
-    color: $white-default;
+    background-color: $green-light;
+    color: $black-default;
+    @include buttonText();
 
     width: 100%;
 
     padding: 10px 12px;
     border: none;
-    border-radius: $btn-border;
+    border-radius: $border-2;
 
     transition: $transition;
 
     &:hover {
-        background-color: $dark-light;
+        background-color: $green-light-hover;
     }
 
     &:active {
-        background-color: $dark-active;
+        background-color: $green-light-active;
     }
 
     &:disabled {
         cursor: not-allowed;
-        background-color: #7676766b;
+        background-color: $grey-dark;
     }
 }
