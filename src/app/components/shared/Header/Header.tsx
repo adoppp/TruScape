@@ -1,7 +1,7 @@
 import { FC, ReactElement } from "react";
 import classNames from "classnames/bind";
 
-import styles from '@/app/components/Header/Header.module.scss';
+import styles from '@/app/components/shared/Header/Header.module.scss';
 
 import { IconCart, IconLogIn, IconLogo } from "@/app/assets/svg";
 

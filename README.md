@@ -1,1 +1,4 @@
-4. Rendering
+--- types for product
+--- product page
+--- go back button
+--- card page as component

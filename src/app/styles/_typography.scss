@@ -1,4 +1,11 @@
-@mixin buttonText() {
+@mixin defaultHeading($weight: 400) {
     font-size: 20px;
-    font-weight: 400;
+    font-weight: $weight;
+}
+
+@mixin heading($align: center) {
+    font-size: 48px;
+    font-weight: 500;
+    text-align: $align;
+    margin: 0 0 36px 0;
 }
