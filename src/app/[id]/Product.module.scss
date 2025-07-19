@@ -1,0 +1,77 @@
+@use '@/app/styles/variables' as *;
+@use '@/app/styles/colors' as *;
+@use '@/app/styles/typography' as *;
+
+.container {
+    margin: 0 auto;
+    padding: 40px 24px;
+}
+
+.product {
+    display: flex;
+    gap: 20px;
+
+    & img {
+        max-width: 420px;
+        border-radius: $border-2;
+
+        -webkit-box-shadow: $shadow;
+        -moz-box-shadow: $shadow;
+        box-shadow: $shadow;
+    }
+
+    &__info {
+        color: $black-default;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        & h1 {
+            @include heading($align: start, $weight: 400);
+            color: $grey-green-default;
+
+            margin-bottom: 16px;
+        }
+    }
+
+    &__section {
+        display: flex;
+        align-items: center;
+
+        margin-bottom: 16px;
+
+        &:first-of-type {
+            display: block;
+        }
+
+        &:nth-last-of-type(2) { 
+            @include defaultHeading($size: 24px);
+        }
+
+        &:last-of-type {
+            margin-bottom: 0;
+            @include defaultHeading($size: 24px);
+        }
+
+        & p {
+            @include text;
+        }
+
+        & span {
+            color: $green-default;
+        }
+    }
+
+    &__sub-title {
+        @include defaultHeading($size: 24px);
+        color: $grey-green-default;
+
+        &_top {
+            margin-bottom: 8px;
+        }
+
+        &_right {
+            margin-right: 8px;
+        }
+    }
+}

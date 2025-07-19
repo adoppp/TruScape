@@ -21,6 +21,7 @@
 
         & h2 {
             @include defaultHeading();
+            color: $black-default;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;

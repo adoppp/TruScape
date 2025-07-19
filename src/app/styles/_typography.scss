@@ -1,11 +1,17 @@
-@mixin defaultHeading($weight: 400) {
-    font-size: 20px;
+@mixin defaultHeading($weight: 400, $size: 20px) {
+    font-size: $size;
     font-weight: $weight;
+    line-height: normal;
 }
 
-@mixin heading($align: center) {
+@mixin heading($align: center, $weight: 500) {
     font-size: 48px;
-    font-weight: 500;
+    font-weight: $weight;
     text-align: $align;
-    margin: 0 0 36px 0;
+    line-height: normal;
+}
+
+@mixin text() {
+    font-size: 20px;
+    font-weight: 300;
 }

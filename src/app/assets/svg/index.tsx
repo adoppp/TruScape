@@ -22,3 +22,11 @@ export const IconLogIn = (
         <path d="M21.0834 14.4167L26.6667 20L21.0834 25.5833" stroke="#283F3B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
 );
+
+export const IconArrowLeft = (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+        <g filter="url(#filter0_d_3195_974)">
+        <path d="M15 19.9201L8.47997 13.4001C7.70997 12.6301 7.70997 11.3701 8.47997 10.6001L15 4.08008" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+    </svg>
+);

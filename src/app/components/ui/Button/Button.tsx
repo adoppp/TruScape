@@ -3,7 +3,7 @@
 import { ButtonHTMLAttributes, FC, ReactElement } from "react";
 import classNames from "classnames/bind";
 
-import styles from '@/app/ui/Button/Button.module.scss';
+import styles from '@/app/components/ui/Button/Button.module.scss';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     label: string;

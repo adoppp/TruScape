@@ -1,0 +1,35 @@
+@use '@/app/styles/variables' as *;
+@use '@/app/styles/colors' as *;
+@use '@/app/styles/typography' as *;
+
+.button {
+    @include text;
+    color: $green-default;
+    
+    display: inline-flex;
+    margin-bottom: 32px;
+
+    transition: $transition;
+
+    & svg {
+        stroke: $green-default;
+        transition: $transition;
+        max-height: 24px;
+    }
+
+    &:hover {
+        color: $green-light-hover;
+
+        & svg {
+            stroke: $green-light-hover;
+        }
+    }
+    
+    &:active {
+        color: $green-light-active;
+
+        & svg {
+            stroke: $green-light-active;
+        }
+    }
+}

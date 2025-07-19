@@ -6,7 +6,7 @@ import styles from '@/app/components/shared/ProductCard/Productcard.module.scss'
 import { CustomButtonLink } from "@/app/components/ui/CustomButtonLink/CustomButtonLink";
 
 interface ProductCardProps {
-    id: string;
+    id: number;
     title: string;
     price: number;
     image: string;

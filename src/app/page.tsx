@@ -2,6 +2,7 @@ import classNames from "classnames/bind";
 
 import styles from '@/app/Home.module.scss';
 import { ProductCard } from "./components/shared/ProductCard/ProductCard";
+import { Product } from "@/app/types";
 
 async function getProducts() {
     const response = await fetch('https://fakestoreapi.com/products', {
@@ -17,9 +18,9 @@ async function getProducts() {
 const cn = classNames.bind(styles);
 
 export default async function Home() {
-    const products = await getProducts();
+    const products: Product[] = await getProducts();
 
-    const cards = products.map((product: any) => 
+    const cards = products.map((product: Product) => 
         <ProductCard 
             key={product.id} 
             id={product.id} 
