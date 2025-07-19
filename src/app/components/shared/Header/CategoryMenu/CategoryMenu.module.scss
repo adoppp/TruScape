@@ -1,0 +1,42 @@
+@use '@/app/styles/variables' as *;
+@use '@/app/styles/colors' as *;
+@use '@/app/styles/typography' as *;
+
+.category {
+    position: relative;
+
+    &__label {
+        @include defaultHeading($size: 36px);
+        cursor: pointer;
+    }
+
+    &__list {
+        opacity: 0;
+
+        background-color: $white-default;
+
+        display: flex;
+        gap: 8px;
+        width: max-content;
+
+        position: absolute;
+        top: 60px;
+        left: -100%;
+
+        padding: 16px;
+        border-radius: $border-1;
+        transition: $transition;
+
+        & li {
+            cursor: pointer;
+        }
+    }
+
+    &:hover &__list {
+        opacity: 1;
+    }
+
+    &:hover &__label {
+        color: $white-default;
+    }
+}
